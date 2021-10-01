@@ -1,5 +1,8 @@
 /*===== GOOGLE FONTS =====*/
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /*===== VARIABLES CSS =====*/
 :root {
@@ -10,15 +13,18 @@
 /*===== Colores =====*/
 :root {
   --first-color: #017f38;
+  --primary-text-color: #00a077;
   --white-color: #fafaff;
+  --black-color: black;
   --dark-color: #2a3b47;
   --text-color: #697477;
 }
 
 /*===== Fuente y tipografia =====*/
 :root {
-  --body-font: "DM Sans", sans-serif;
+  --body-font: 'DM Sans', sans-serif;
   --big-font-size: 6.25rem;
+  --medium--font-size: 4rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: 0.938rem;
   --small-font-size: 0.813rem;
@@ -88,13 +94,11 @@ img {
 }
 .section-title {
   position: relative;
-  font-size: var(--h2-font-size);
-  color: var(--dark-color);
-  /* margin: var(--mb-4) 0; */
-  text-align: left;
+  color: var(--primary-text-color);
+  margin-bottom: var(--mb-3);
 }
 
-span[class*="section-title"]:last-child {
+span[class*='section-title']:last-child {
   margin-bottom: 3rem;
 }
 /* .section-title::after {
@@ -121,17 +125,16 @@ span[class*="section-title"]:last-child {
 }
 .l-header {
   width: 100%;
-  position: fixed;
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: var(--first-color);
-  height: 95vh;
-  background-image: url(../public/assets/img/toppay-hero.png);
-  background-size: cover;
+  height: 60vh;
+  background-image: url(../public/assets/img/toppay-background.png);
+  background-size: 100% 100%;
   background-position: top;
   position: relative;
   padding-top: 1rem;
+  background-repeat: no-repeat;
 }
 
 /*===== NAV =====*/
@@ -154,6 +157,9 @@ span[class*="section-title"]:last-child {
     background-color: rgba(255, 255, 255, 0.3);
     transition: 0.5s;
     backdrop-filter: blur(10px);
+  }
+  .nav__text-box {
+    top: 50% !important;
   }
 }
 .nav__item {
@@ -188,7 +194,7 @@ span[class*="section-title"]:last-child {
 .nav__text-box {
   width: max-content;
   position: absolute;
-  top: 50%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -202,7 +208,7 @@ span[class*="section-title"]:last-child {
 /*Active menu*/
 .active::after {
   position: absolute;
-  content: "";
+  content: '';
   width: 100%;
   height: 0.18rem;
   left: 0;
@@ -321,12 +327,9 @@ span[class*="section-title"]:last-child {
   overflow: hidden;
   padding: 30px;
   border-radius: 0.5rem;
-  box-shadow: 4.3px 1.3px 2.2px rgba(0, 0, 0, 0.017),
-    10.2px 3.2px 5.3px rgba(0, 0, 0, 0.026),
-    19.3px 6px 10px rgba(0, 0, 0, 0.033),
-    34.4px 10.7px 17.9px rgba(0, 0, 0, 0.04),
-    64.3px 20.1px 33.4px rgba(0, 0, 0, 0.049),
-    154px 48px 80px rgba(0, 0, 0, 0.07);
+  box-shadow: 4.3px 1.3px 2.2px rgba(0, 0, 0, 0.017), 10.2px 3.2px 5.3px rgba(0, 0, 0, 0.026),
+    19.3px 6px 10px rgba(0, 0, 0, 0.033), 34.4px 10.7px 17.9px rgba(0, 0, 0, 0.04),
+    64.3px 20.1px 33.4px rgba(0, 0, 0, 0.049), 154px 48px 80px rgba(0, 0, 0, 0.07);
   background-color: var(--white-color);
 }
 /* .services__img img {
@@ -339,10 +342,13 @@ span[class*="section-title"]:last-child {
 
 /* ===== CONTACT =====*/
 .contact {
-  background-image: url(../public/assets/img/toppay-hero.png);
+  background-image: url(../public/assets/img/contact-bg.png);
 }
 .contact__container {
   row-gap: 2rem;
+}
+
+.contact__img_cont {
 }
 .contact__subtitle {
   font-size: var(--normal-font-size);
@@ -363,11 +369,11 @@ span[class*="section-title"]:last-child {
   flex-direction: column;
   justify-content: space-evenly;
 }
-.contact__input {
+.ant-input.contact__input {
   width: 100%;
   padding: 0.4rem 0.5rem;
   outline: none;
-  border: 1.5px solid var(--dark-color);
+  border: 1.5px solid transparent;
   font-size: var(--normal-font-size);
   border-radius: 0.8rem;
   margin-bottom: 3px;
@@ -376,7 +382,7 @@ span[class*="section-title"]:last-child {
   display: block;
   background-color: var(--first-color);
   color: var(--white-color);
-  padding: 0.75rem 2.5rem;
+  padding: 0.75rem 2.5rem !important;
   margin-left: auto;
   margin-right: auto;
   border-radius: 0.5rem;
@@ -388,7 +394,8 @@ span[class*="section-title"]:last-child {
 
 /* ===== FOOTER=====*/
 .footer {
-  background-color: var(--dark-color);
+  background-color: var(--black-color);
+  color: var(--white-color);
 }
 .footer__container {
   row-gap: 2rem;
@@ -407,9 +414,14 @@ span[class*="section-title"]:last-child {
 .footer__social {
   font-size: 1.4rem;
   margin-right: var(--mb-1);
+  color: var(--white-color);
 }
 .footer__social:hover {
   color: var(--first-color);
+}
+
+.footer__data {
+  display: flex;
 }
 
 /* ===== MEDIA QUERIES =====*/
@@ -429,12 +441,18 @@ span[class*="section-title"]:last-child {
   }
   .section-title {
     /* margin-bottom: 3rem; */
+    /* font-size: var(--medium--font-size); */
   }
   .section-title::after {
     width: 64px;
     top: 3rem;
   }
 
+  .l-header {
+    background-image: url(../public/assets/img/toppay-hero.png);
+    height: 150vh;
+    background-size: cover;
+  }
   .nav {
     height: calc(var(--header-height) + 1rem);
   }
@@ -497,7 +515,7 @@ span[class*="section-title"]:last-child {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
   }
-  .contact__form {
+  .ant-form.ant-form-horizontal.contact__form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -586,7 +604,7 @@ span[class*="section-title"]:last-child {
 }
 
 .btn:after {
-  content: "";
+  content: '';
   display: inline-block;
   height: 100%;
   width: 100%;
@@ -642,7 +660,7 @@ span[class*="section-title"]:last-child {
 }
 .btn--2::after,
 .btn--2::before {
-  content: "";
+  content: '';
   position: absolute;
   height: 60%;
   width: 10%;
@@ -653,15 +671,13 @@ span[class*="section-title"]:last-child {
   background-color: #7ed56f;
   top: -0.75rem;
   left: 0.5rem;
-  animation: top 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.25s infinite
-    alternate;
+  animation: top 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.25s infinite alternate;
 }
 .btn--2::after {
   background-color: #28b485;
   top: 3rem;
   left: 13rem;
-  animation: bottom 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s infinite
-    alternate;
+  animation: bottom 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s infinite alternate;
 }
 .btn--2:hover {
   color: #fff;
@@ -687,13 +703,13 @@ span[class*="section-title"]:last-child {
 /* ========HEADING======= */
 .heading-primary {
   color: #fff;
-  text-transform: uppercase;
   backface-visibility: hidden;
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
 }
 .heading-primary--main {
   display: block;
-  font-size: 4.25rem;
+  /* font-size: 4.25rem; */
+  text-transform: uppercase;
   font-weight: 400;
   animation-name: moveInLeft;
   animation-duration: 1s;
@@ -707,7 +723,7 @@ span[class*="section-title"]:last-child {
 }
 .heading-primary--sub {
   display: block;
-  font-size: 1.25rem;
+  /* font-size: 1.25rem; */
   line-height: 2.125rem;
   font-weight: 400;
   /*    animation-name: moveInRight;
@@ -735,6 +751,7 @@ span[class*="section-title"]:last-child {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 3rem;
 }
 
 .promotions__carousel {
@@ -745,14 +762,52 @@ span[class*="section-title"]:last-child {
 .promotions__text {
   text-align: center;
   color: var(--white-color);
+  margin-bottom: var(--mb-4);
 }
 
 .text-white {
   color: var(--white-color);
 }
 .ant-carousel .slick-arrow.slick-next::before {
-  content: "";
+  content: '';
 }
 .ant-carousel .slick-arrow.slick-prev::before {
-  content: "";
+  content: '';
+}
+
+/* ]]]]]]]]]]]]]]]]]]]]]]]]]]]]] GRID [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[ */
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* ================== SPONSOR ===========================*/
+.providers__container {
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  row-gap: 3.5rem;
+  margin-bottom: var(--mb-4);
+}
+
+.providers__content:hover .providers__img {
+  filter: invert(0.5);
+}
+
+.providers__img {
+  width: 90px;
+  filter: invert(0.7);
+  transition: var(--img-transition);
+}
+
+.providers__text {
+  text-align: center;
+}
+
+.tx-center {
+  text-align: center;
+}
+
+.ant-modal-body {
+  padding: 10px;
 }

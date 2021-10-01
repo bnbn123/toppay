@@ -9,15 +9,48 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ant-design/icons": "^4.7.0",
     "antd": "^4.16.13",
+    "autoprefixer": "^10.3.6",
     "next": "11.1.2",
+    "postcss": "^8.3.8",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "tailwindcss": "^2.2.16"
   },
   "devDependencies": {
     "@types/react": "17.0.24",
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.2",
     "typescript": "4.4.3"
+  },
+  "eslintConfig": {
+    "plugins": [
+      "prettier"
+    ],
+    "extends": [
+      "react-app",
+      "react-app/jest",
+      "plugin:react/recommended",
+      "plugin:prettier/recommended",
+      "prettier"
+    ],
+    "rules": {
+      "react/jsx-uses-react": "off",
+      "react/react-in-jsx-scope": "off",
+      "react/self-closing-comp": [
+        "error",
+        {
+          "component": true,
+          "html": true
+        }
+      ],
+      "prettier/prettier": 2
+    }
+  },
+  "prettier": {
+    "singleQuote": true,
+    "printWidth": 120,
+    "endOfLine": "auto"
   }
 }
