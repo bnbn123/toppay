@@ -1,13 +1,43 @@
 {
-  "--------------------------------------NAV_BAR-------------------------------": "NAVBAR",
-  "NAV_BAR_ITEMS": [
-    "Home",
-    "Your benefits",
-    "Product",
-    "Promotions",
-    "Providers",
-    "Contact"
+  "--------------------------------------PRODUCTS------------------------------": "PRODUCTS",
+  "PRODUCTS": [
+    {
+      "prodName": "CLOVER MINI",
+      "prodSum": "We know the best solution for all of your business ideas and we can help you solve all business problems",
+      "prodDescription": "  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nost sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostsit amet, consectetur sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua. Ut enim ad minim veniam, quis nost",
+      "imgSrc": "/assets/img/products/clover-mini.png",
+      "right": true
+    },
+    {
+      "prodName": "PAX A920",
+      "prodSum": "We know the best solution for all of your business ideas and we can help you solve all business problems",
+      "prodDescription": "  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nost sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostsit amet, consectetur sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua. Ut enim ad minim veniam, quis nost",
+      "imgSrc": "/assets/img/products/A920.jpg"
+    },
+    {
+      "prodName": "CLOVER PRO STATION",
+      "prodSum": "We know the best solution for all of your business ideas and we can help you solve all business problems",
+      "prodDescription": "  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nost sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostsit amet, consectetur sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua. Ut enim ad minim veniam, quis nost",
+      "imgSrc": "/assets/img/products/clover-pro.png",
+      "right": true
+    },
+    {
+      "prodName": "CLOVER FLEX",
+      "prodSum": "We know the best solution for all of your business ideas and we can help you solve all business problems",
+      "prodDescription": "  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nost sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostsit amet, consectetur sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua. Ut enim ad minim veniam, quis nost",
+      "imgSrc": "/assets/img/products/clover-flex.png"
+    },
+    {
+      "prodName": "PAX E800",
+      "prodSum": "We know the best solution for all of your business ideas and we can help you solve all business problems",
+      "prodDescription": "  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nost sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostsit amet, consectetur sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua. Ut enim ad minim veniam, quis nost",
+      "imgSrc": "/assets/img/products/Pax-E800.png",
+      "right": true
+    }
   ],
+
+  "--------------------------------------NAV_BAR-------------------------------": "NAVBAR",
+  "NAV_BAR_ITEMS": ["Home", "Your benefits", "Product", "Promotions", "Providers", "Contact"],
 
   "--------------------------------------REWARDS-------------------------------": "SALON_MENU",
   "REWARDS": [
@@ -665,9 +695,7 @@
       "total": 121
     },
     {
-      "data": [
-        "https://vnailweb.com/wp-content/uploads/2021/06/Hollywood-Pedicure--300x300.jpeg"
-      ],
+      "data": ["https://vnailweb.com/wp-content/uploads/2021/06/Hollywood-Pedicure--300x300.jpeg"],
       "page": 11,
       "per_page": 1,
       "total": 121

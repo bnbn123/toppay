@@ -14,6 +14,7 @@
 :root {
   --first-color: #017f38;
   --primary-text-color: #00a077;
+  --product-text-color: #065227;
   --white-color: #fafaff;
   --black-color: black;
   --dark-color: #2a3b47;
@@ -59,6 +60,7 @@
 }
 html {
   scroll-behavior: smooth;
+  font-family: 'DM Sans';
 }
 body {
   margin: var(--header-height) 0 0 0;
@@ -763,7 +765,7 @@ span[class*='section-title']:last-child {
 
 /* ================== SPONSOR ===========================*/
 .providers__container {
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   row-gap: 3.5rem;
   margin-bottom: var(--mb-4);
@@ -794,4 +796,12 @@ span[class*='section-title']:last-child {
 .service__icon {
   height: 50px;
   width: 50px;
+}
+/* =======================PRODUCT====================== */
+.product-title {
+  color: var(--product-text-color);
+}
+
+.font-DMSANS {
+  font-family: 'DM Sans';
 }

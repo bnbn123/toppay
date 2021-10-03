@@ -1,7 +1,10 @@
 import { Promotions } from 'components/Carousel';
 import { Contact } from 'components/Contact';
+import { Footer } from 'components/Footer';
 import { HeaderCustom } from 'components/Header';
 import { Hero } from 'components/Hero';
+import { Intro } from 'components/Intro';
+import { ProductIntro } from 'components/ProductIntro';
 import { ProductList } from 'components/ProductsList';
 import { Providers } from 'components/Providers';
 import { Services } from 'components/Services';
@@ -15,9 +18,13 @@ const Product: NextPage = () => {
   return (
     <>
       <HeaderCustom />
-      <main className="l-main">
+      <ProductIntro />
+
+      <div className="l-main">
         <ProductList />
-      </main>
+        <Contact />
+      </div>
+      <Footer />
     </>
   );
 };

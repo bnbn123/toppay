@@ -7,8 +7,6 @@ export const Intro = () => {
         className="h-full md:h-3/4 w-full toppay-bng object-none md:object-fill absolute"
         src="/assets/img/toppay-background.png"
         alt="toppay-device"
-        objectFit="cover" // change to suit your needs
-        layout="fill"
       ></img>
 
       <div className="mt-40 flex flex-col items-center">
@@ -19,7 +17,7 @@ export const Intro = () => {
             We have the solution for every businesses
           </span>
         </div>
-        <a href="#" className="btn btn--white btn--animated mt-12">
+        <a href="#contact" className="btn btn--white btn--animated mt-12">
           Get Started
         </a>
       </div>

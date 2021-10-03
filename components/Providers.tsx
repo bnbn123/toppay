@@ -17,94 +17,10 @@ export const Providers = (props: any) => {
         </div>
         <div className="providers__container bd-grid grid">
           <div className="providers__content">
-            <Image
-              src="/assets/img/providers/providers.svg"
-              alt=""
-              className="providers__img"
-              width={145}
-              height={55}
-            />
+            <Image src="/assets/img/providers/1.svg" alt="" className="providers__img" width={145} height={55} />
           </div>
           <div className="providers__content">
-            <Image
-              src="/assets/img/providers/providers2.svg"
-              alt=""
-              className="providers__img"
-              width={145}
-              height={55}
-            />
-          </div>
-          <div className="providers__content">
-            <Image
-              src="/assets/img/providers/providers3.svg"
-              alt=""
-              className="providers__img"
-              width={145}
-              height={55}
-            />
-          </div>
-          <div className="providers__content">
-            <Image
-              src="/assets/img/providers/providers4.svg"
-              alt=""
-              className="providers__img"
-              width={145}
-              height={55}
-            />
-          </div>
-          <div className="providers__content">
-            <Image
-              src="/assets/img/providers/providers5.svg"
-              alt=""
-              className="providers__img"
-              width={145}
-              height={55}
-            />
-          </div>
-          <div className="providers__content">
-            <Image
-              src="/assets/img/providers/providers6.svg"
-              alt=""
-              className="providers__img"
-              width={145}
-              height={55}
-            />
-          </div>
-          <div className="providers__content">
-            <Image
-              src="/assets/img/providers/providers7.svg"
-              alt=""
-              className="providers__img"
-              width={145}
-              height={55}
-            />
-          </div>
-          <div className="providers__content">
-            <Image
-              src="/assets/img/providers/providers8.svg"
-              alt=""
-              className="providers__img"
-              width={145}
-              height={55}
-            />
-          </div>
-          <div className="providers__content">
-            <Image
-              src="/assets/img/providers/providers9.svg"
-              alt=""
-              className="providers__img"
-              width={145}
-              height={55}
-            />
-          </div>
-          <div className="providers__content">
-            <Image
-              src="/assets/img/providers/providers10.svg"
-              alt=""
-              className="providers__img"
-              width={145}
-              height={55}
-            />
+            <Image src="/assets/img/providers/2.svg" alt="" className="providers__img" width={349} height={45} />
           </div>
         </div>
         <div className="providers__text bd-grid">

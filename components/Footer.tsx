@@ -1,15 +1,15 @@
-import React from "react";
-import staticData from "static/assets/data.json";
-import Image from "next/image";
-import siteLogo from "public/assets/img/toppay-logo.png";
-import { Divider } from "antd";
+import React from 'react';
+import staticData from 'static/assets/data.json';
+import Image from 'next/image';
+import siteLogo from 'public/assets/img/toppay-logo-white.png';
+import { Divider } from 'antd';
 
 export const Footer = (props: any) => {
   const navItems: string[] = staticData.NAV_BAR_ITEMS;
 
   const menuItem = navItems.map((item, index) => {
     const key = index + 1;
-    const href = `#${item.toLowerCase().replace(" ", "_")}`;
+    const href = `#${item.toLowerCase().replace(' ', '_')}`;
 
     return (
       <li key={key} className="px-2 nav__item">
@@ -25,13 +25,7 @@ export const Footer = (props: any) => {
       <div className="footer__container">
         <nav className="nav bd-grid">
           <div className="">
-            <Image
-              src={siteLogo}
-              alt="logo"
-              className="nav__logo"
-              width={120}
-              height={36}
-            />
+            <Image src={siteLogo} alt="logo" className="nav__logo" width={120} height={36} />
           </div>
           <div className="nav__menu" id="nav-menu">
             <ul className="nav__list mb-0">{menuItem}</ul>
@@ -49,7 +43,7 @@ export const Footer = (props: any) => {
             </a>
           </div>
         </nav>
-        <hr className="bd-grid" style={{ color: "white" }} />
+        <hr className="bd-grid" style={{ color: 'white' }} />
         <div className="nav bd-grid">
           <div className="left-footer-text">
             <div className="intl">&copy;2021 company</div>
