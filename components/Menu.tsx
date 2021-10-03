@@ -5,11 +5,11 @@ import classnames from 'classnames';
 import styles from 'styles/Menu.module.css';
 
 interface IProps {
-  menuItems?: React.ReactNode;
+  menuItems?: React.ReactNode[];
   drawerClassName?: string;
   wrapperClassName?: string;
 }
-export const DrawerMenu = ({ menuItems, drawerClassName, wrapperClassName }: IProps) => {
+export const DrawerMenu = ({ menuItems = [], drawerClassName, wrapperClassName }: IProps) => {
   const [visible, setVisible] = useState(false);
   return (
     <div className={classnames('menu-drawer-container', wrapperClassName)}>
