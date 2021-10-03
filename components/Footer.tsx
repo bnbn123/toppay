@@ -12,7 +12,7 @@ export const Footer = (props: any) => {
     const href = `#${item.toLowerCase().replace(" ", "_")}`;
 
     return (
-      <li key={key} className="nav__item">
+      <li key={key} className="px-2 nav__item">
         <a href={href} className="nav__link">
           {item}
         </a>
@@ -21,7 +21,7 @@ export const Footer = (props: any) => {
   });
 
   return (
-    <footer className="footer section">
+    <footer className="w-screen footer section">
       <div className="footer__container">
         <nav className="nav bd-grid">
           <div className="">

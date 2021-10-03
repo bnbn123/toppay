@@ -18,7 +18,7 @@ export const HeaderCustom = (props: any) => {
     const href = `#${item.toLowerCase().replace(' ', '_')}`;
 
     return (
-      <li key={key} className="nav__item">
+      <li key={key} className="px-2 nav__item">
         <a href={href} className="nav__link">
           {item}
         </a>
@@ -48,12 +48,12 @@ export const HeaderCustom = (props: any) => {
     console.log('SUbmited');
   }
   return (
-    <div className="">
-      <header className="l-header">
+    <>
+      <header className="absolute top-0 z-10 w-full px-2 py-3 l-header">
         <nav className="nav">
           <div className="mt-2 w-1/3 md:w-max">
             {/* find me in styles.css */}
-            <Image src={siteLogo} alt="logo" className="nav__logo" />
+            <img src={'/assets/img/toppay-logo.png'} alt="logo" className="object-contain nav__logo" />
           </div>
           <div className="nav__menu" id="nav-menu">
             <ul className="nav__list">{menuItem}</ul>
@@ -64,30 +64,11 @@ export const HeaderCustom = (props: any) => {
             </a>
           </div>
           <div className="nav__toggle" id="nav-toggle">
-            <i className="bx bx-menu" />
+            <i className="text-white bx bx-menu" />
           </div>
           <DrawerMenu wrapperClassName="md:hidden mb-2" drawerClassName="list-none" menuItems={menuItem} />
         </nav>
-        <div className="nav__text-box">
-          <h1 className="heading-primary">
-            <span className="text-2xl md:text-5xl heading-primary--main">the preferred payment</span>
-            <span className="text-2xl md:text-5xl heading-primary--main">processing company</span>
-            <span className="text-xs md:text-2xl heading-primary--sub">We have the solution for every businesses</span>
-          </h1>
-          <a href="#" className="btn btn--white btn--animated" onClick={showModal}>
-            Get Started
-          </a>
-        </div>
       </header>
-      <div className="h-96 w-96 relative md:hidden  bd-grid image-container ">
-        <Image
-          className="toppay-device"
-          src="/assets/img/toppay-hero-device.png"
-          alt="toppay-device"
-          objectFit="cover" // change to suit your needs
-          layout="fill"
-        ></Image>
-      </div>
       <Modal
         title="Contact Info"
         visible={visible}
@@ -99,6 +80,6 @@ export const HeaderCustom = (props: any) => {
       >
         <ContactForm form={form} onFinish={onSubmit} />
       </Modal>
-    </div>
+    </>
   );
 };

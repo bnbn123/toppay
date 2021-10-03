@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import siteHero from 'public/assets/img/toppay-hero-product.svg';
 import { Form, Input } from 'antd';
 import ContactForm from './ContactForm';
 import { ContactFormValueProp } from 'types/form';
@@ -13,8 +12,8 @@ export const Contact = (props: any) => {
     console.log('SUbmited');
   }
   return (
-    <section className="contact section" id="contact">
-      <div className="contact__container bd-grid">
+    <section className="contact section flex justify-center" id="contact">
+      <div className="flex flex-row w-3/4 justify-between">
         <div className="form-title-container">
           <h1 className="section-title text-left text-white ">START WITH US</h1>
           <span className="text-3xl text-contact__form mb-3">Free Consultant</span>
@@ -24,8 +23,13 @@ export const Contact = (props: any) => {
           </span>{' '}
           <ContactForm form={form} onFinish={onSubmit} />
         </div>
-        <div className="flex justify-end">
-          <Image src={siteHero} alt="product" className="home__img" />
+        <div className="flex items-end hidden md:flex w-2/5 lg:w-2/6">
+          <img
+            src="/assets/img/toppay-hero-device.png"
+            alt="product"
+            className="object-contain"
+            style={{ height: 'fit-content' }}
+          />
         </div>
       </div>
     </section>

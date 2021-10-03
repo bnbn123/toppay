@@ -49,17 +49,16 @@ const SamplePrevArrow = ({ className, style, onClick }: IArrowProps) => {
 };
 
 const contentStyle: CSSProperties = {
-  height: '400px',
   color: '#fff',
   lineHeight: '400px',
   textAlign: 'center',
-  background: '#364d79',
+  background: '#364e790',
 };
 
 export const Promotions = () => {
   return (
-    <section className="promotions section" id="promotions">
-      <div className="promotions__container">
+    <section className="promotions section flex flex-col items-center" id="promotions">
+      <div className="promotions__container w-3/4 ">
         <div className="promotions__text">
           <h1 className="section-title text-center text-white ">PROMOTIONS</h1>
           <span className="text-3xl text-white">Lorem IPsum sdasndasdas</span>
@@ -70,15 +69,14 @@ export const Promotions = () => {
         </div>
         <div className="promotions__carousel">
           <Carousel style={contentStyle} arrows prevArrow={<SamplePrevArrow />} nextArrow={<SampleNextArrow />}>
-            <Image src="/assets/img/banner.svg" alt="" layout="fill" />
-            <div>
-              <h3>2</h3>
+            <div className="h-full">
+              <img src="/assets/img/banner.svg" alt="" />
             </div>
             <div>
-              <h3>3</h3>
+              <img src="/assets/img/banner.svg" alt="" />
             </div>
             <div>
-              <h3>4</h3>
+              <img src="/assets/img/banner.svg" alt="" />
             </div>
           </Carousel>
         </div>

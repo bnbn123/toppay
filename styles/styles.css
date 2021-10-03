@@ -123,19 +123,6 @@ span[class*='section-title']:last-child {
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
 }
-.l-header {
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: var(--z-fixed);
-  height: 60vh;
-  background-image: url(../public/assets/img/toppay-background.png);
-  background-size: 100% 100%;
-  background-position: top;
-  position: relative;
-  padding-top: 1rem;
-  background-repeat: no-repeat;
-}
 
 /*===== NAV =====*/
 .nav {
@@ -158,9 +145,6 @@ span[class*='section-title']:last-child {
     transition: 0.5s;
     backdrop-filter: blur(10px);
   }
-  .nav__text-box {
-    top: 50% !important;
-  }
 }
 .nav__item {
   margin-bottom: var(--mb-4);
@@ -177,6 +161,8 @@ span[class*='section-title']:last-child {
 }
 .nav__logo {
   color: var(--white-color);
+  width: 160px;
+  height: 190px !important;
 }
 .nav__toggle {
   color: var(--white-color);
@@ -315,9 +301,7 @@ span[class*='section-title']:last-child {
 }
 
 /* ===== SERVICES =====*/
-.services {
-  background-image: url(../public/assets/img/bg-services.png);
-}
+
 .services__container {
   justify-items: center;
   row-gap: 2rem;
@@ -448,11 +432,6 @@ span[class*='section-title']:last-child {
     top: 3rem;
   }
 
-  .l-header {
-    background-image: url(../public/assets/img/toppay-hero.png);
-    height: 150vh;
-    background-size: cover;
-  }
   .nav {
     height: calc(var(--header-height) + 1rem);
   }
@@ -460,7 +439,6 @@ span[class*='section-title']:last-child {
     display: flex;
   }
   .nav__item {
-    margin-left: var(--mb-4);
     margin-bottom: 0;
   }
   .nav__toggle {
@@ -762,7 +740,6 @@ span[class*='section-title']:last-child {
 .promotions__text {
   text-align: center;
   color: var(--white-color);
-  margin-bottom: var(--mb-4);
 }
 
 .text-white {
@@ -775,12 +752,14 @@ span[class*='section-title']:last-child {
   content: '';
 }
 
-/* ]]]]]]]]]]]]]]]]]]]]]]]]]]]]] GRID [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[ */
-
-.grid {
-  display: grid;
-  gap: 1.5rem;
+.ant-carousel .slick-list .slick-slide > div {
+  height: 100%;
 }
+.slick-initialized {
+  line-height: 0 !important;
+}
+
+/* ]]]]]]]]]]]]]]]]]]]]]]]]]]]]] GRID [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[ */
 
 /* ================== SPONSOR ===========================*/
 .providers__container {
@@ -810,4 +789,9 @@ span[class*='section-title']:last-child {
 
 .ant-modal-body {
   padding: 10px;
+}
+
+.service__icon {
+  height: 50px;
+  width: 50px;
 }
