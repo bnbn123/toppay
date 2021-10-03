@@ -7,8 +7,6 @@ export const Intro = () => {
         className="h-full md:h-3/4 w-full toppay-bng object-none md:object-fill absolute"
         src="/assets/img/toppay-background.png"
         alt="toppay-device"
-        objectFit="cover" // change to suit your needs
-        layout="fill"
       ></img>
 
       <div className="mt-40 flex flex-col items-center">
@@ -28,8 +26,6 @@ export const Intro = () => {
         className="md:absolute md:bottom-0 w-3/4 md:w-1/2 lg:w-2/5 xl:w-2/6 toppay-device z-20 mt-14"
         src="/assets/img/toppay-hero-device.png"
         alt="toppay-device"
-        objectFit="cover" // change to suit your needs
-        layout="fill"
       ></img>
     </div>
   );
