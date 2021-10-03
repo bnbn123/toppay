@@ -53,7 +53,7 @@ export const HeaderCustom = (props: any) => {
         <nav className="nav">
           <div className="mt-2 w-1/3 md:w-max">
             {/* find me in styles.css */}
-            <img src={'/assets/img/toppay-logo.png'} alt="logo" className="object-contain nav__logo" />
+            <img src={'/assets/img/toppay-logo-2.png'} alt="logo" className="object-contain nav__logo" />
           </div>
           <div className="nav__menu" id="nav-menu">
             <ul className="nav__list">{menuItem}</ul>
