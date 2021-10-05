@@ -12,9 +12,9 @@ export const Contact = (props: any) => {
     console.log('SUbmited');
   }
   return (
-    <section className="contact section flex justify-center" id="contact">
+    <section className="contact flex justify-center" id="contact">
       <div className="flex flex-row w-3/4 justify-between">
-        <div className="form-title-container">
+        <div className="py-6 flex flex-col justify-center">
           <h1 className="section-title text-left text-white ">START WITH US</h1>
           <span className="text-3xl text-contact__form mb-3">Free Consultant</span>
           <span className="text-contact__form mb-6">

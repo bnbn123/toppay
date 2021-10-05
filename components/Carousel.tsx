@@ -2,8 +2,6 @@ import React, { CSSProperties } from 'react';
 import { LeftOutlined, RightOutlined } from '@ant-design/icons';
 import moment from 'moment';
 import { Carousel } from 'antd';
-import 'antd/dist/antd.css';
-import Image from 'next/image';
 
 interface IArrowProps {
   type?: string;

@@ -6,7 +6,7 @@ import { DrawerMenu } from './Menu';
 import { Form, Modal } from 'antd';
 import { ContactFormValueProp } from 'types/form';
 import ContactForm from './ContactForm';
-
+import Link from 'next/link';
 export const HeaderCustom = (props: any) => {
   const navItems: string[] = staticData.NAV_BAR_ITEMS;
   const [visible, setVisible] = React.useState(false);
@@ -15,13 +15,25 @@ export const HeaderCustom = (props: any) => {
 
   const menuItem = navItems.map((item, index) => {
     const key = index + 1;
-    const href = `#${item.toLowerCase().replace(' ', '_')}`;
+    let href = item.toLowerCase() === 'product' ? '/product' : `#${item.toLowerCase().replace(' ', '_')}`;
+
+    switch (item.toLowerCase()) {
+      case 'product':
+        href = '/product';
+        break;
+      case 'home':
+        href = '/';
+        break;
+      default:
+        href = `#${item.toLowerCase().replace(' ', '_')}`;
+        break;
+    }
 
     return (
       <li key={key} className="px-2 nav__item">
-        <a href={href} className="nav__link">
-          {item}
-        </a>
+        <Link href={href}>
+          <a className="nav__link">{item}</a>
+        </Link>
       </li>
     );
   });
@@ -53,13 +65,13 @@ export const HeaderCustom = (props: any) => {
         <nav className="nav">
           <div className="mt-2 w-1/3 md:w-max">
             {/* find me in styles.css */}
-            <img src={'/assets/img/toppay-logo-2.png'} alt="logo" className="object-contain nav__logo" />
+            <img src={'/assets/img/toppay-logo-white.png'} alt="logo" className="object-contain nav__logo" />
           </div>
           <div className="nav__menu" id="nav-menu">
             <ul className="nav__list">{menuItem}</ul>
           </div>
-          <div className="nav__menu" id="nav-menu" onClick={showModal}>
-            <a href="#" className="btn btn--white btn--animated">
+          <div className="nav__menu" id="nav-menu">
+            <a href="#contact" className="btn btn--white btn--animated">
               Get Started
             </a>
           </div>
