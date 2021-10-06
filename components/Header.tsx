@@ -32,7 +32,7 @@ export const HeaderCustom = (props: any) => {
     return (
       <li key={key} className="px-2 nav__item">
         <Link href={href}>
-          <a className="nav__link text-white font-DMSANS text-bold text-2xl">{item}</a>
+          <a className="nav__link text-white font-DMSANS text-bold text-lg">{item}</a>
         </Link>
       </li>
     );
