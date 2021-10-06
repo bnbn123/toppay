@@ -58,9 +58,10 @@
 ::after {
   box-sizing: border-box;
 }
+*,
 html {
   scroll-behavior: smooth;
-  font-family: 'DM Sans';
+  font-family: 'DM Sans', sans-serif;
 }
 body {
   margin: var(--header-height) 0 0 0;
@@ -90,6 +91,9 @@ img {
   display: block;
 }
 
+.bg-primary {
+  background: linear-gradient(238.14deg, #96c35f -26.9%, #017f38 15.41%, #065227 78.59%), #c4c4c4;
+}
 /*===== CLASS CSS ===== */
 .section {
   padding: 3rem 0;
@@ -535,7 +539,7 @@ span[class*='section-title']:last-child {
 .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 1.25rem 3.125rem;
+  /* padding: 1.25rem 3.125rem; */
   display: inline-block;
   border-radius: 10rem;
   transition: all 0.4s;

@@ -2,22 +2,26 @@ import Image from 'next/image';
 
 export const Intro = () => {
   return (
-    <div className="w-screen h-screen flex flex-col items-center">
+    <div className="w-screen md:h-screen flex flex-col items-center mb-12">
       <img
-        className="h-full md:h-3/4 w-full toppay-bng object-none md:object-fill absolute"
+        className="h-1/2 md:h-3/4 w-full toppay-bng object-cover md:object-fill absolute"
         src="/assets/img/toppay-background.png"
         alt="toppay-device"
       ></img>
 
-      <div className="mt-40 flex flex-col items-center">
-        <div className="flex flex-col items-center z-20">
-          <span className="text-2xl md:text-5xl heading-primary--main text-white">We will exceed your </span>
-          <span className="text-2xl md:text-5xl heading-primary--main text-white">Expectations</span>
-          <span className="text-xs md:text-2xl heading-primary--sub text-white">
+      <div className="mt-24 md:mt-40 flex flex-col items-center">
+        <div className="flex flex-col items-center z-20 text-center ">
+          <span className="text-3xl md:text-5xl heading-primary--main text-white font-bold font-">
+            THE PREFERRED PAYMENT <br /> PROCESSING COMPANY
+          </span>
+          <span className="text-xs md:text-2xl heading-primary--sub text-gray-200">
             We have the solution for every businesses
           </span>
         </div>
-        <a href="#contact" className="btn btn--white btn--animated mt-12">
+        <a
+          href="#contact"
+          className="text-center btn btn--white btn--animated mt-5 md:mt-12 w-5/12 md:w-1/3 py-2 px-3 md:py-4 md:px-12"
+        >
           Get Started
         </a>
       </div>
