@@ -32,7 +32,7 @@ export const HeaderCustom = (props: any) => {
     return (
       <li key={key} className="px-2 nav__item">
         <Link href={href}>
-          <a className="nav__link">{item}</a>
+          <a className="nav__link text-white font-DMSANS text-bold text-2xl">{item}</a>
         </Link>
       </li>
     );
@@ -63,7 +63,7 @@ export const HeaderCustom = (props: any) => {
     <>
       <header className="absolute top-0 z-10 w-full px-2 py-3 l-header">
         <nav className="nav">
-          <div className="mt-2 w-1/3 md:w-max">
+          <div className="mt-2 w-1/6 md:w-max">
             {/* find me in styles.css */}
             <img src={'/assets/img/toppay-logo-white.png'} alt="logo" className="object-contain nav__logo" />
           </div>
@@ -71,14 +71,14 @@ export const HeaderCustom = (props: any) => {
             <ul className="nav__list">{menuItem}</ul>
           </div>
           <div className="nav__menu" id="nav-menu">
-            <a href="#contact" className="btn btn--white btn--animated">
+            <a href="#contact" className="btn btn--white btn--animated text-center md:py-4 md:px-12">
               Get Started
             </a>
           </div>
           <div className="nav__toggle" id="nav-toggle">
             <i className="text-white bx bx-menu" />
           </div>
-          <DrawerMenu wrapperClassName="md:hidden mb-2" drawerClassName="list-none" menuItems={menuItem} />
+          <DrawerMenu wrapperClassName="md:hidden mb-2" drawerClassName="list-none " menuItems={menuItem} />
         </nav>
       </header>
       <Modal

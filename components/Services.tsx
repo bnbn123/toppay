@@ -8,7 +8,7 @@ export const Services = (props: any) => {
   return (
     <section className="relative flex flex-col items-center py-10 pb-20" id="your_benefits">
       <img className="absolute top-0" src="assets/img/bg-services.png"></img>
-      <div className="w-full px-2 md:w-3/4">
+      <div className="w-full px-4 md:w-3/4">
         <div className="flex flex-col mb-8">
           <h1 className="section-title">FEATURES</h1>
           <span className="text-3xl ">Our Services</span>
