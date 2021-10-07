@@ -1,6 +1,9 @@
 import Image from 'next/image';
+import { useTranslation } from 'next-i18next';
 
 export const Intro = () => {
+  const { t } = useTranslation('common');
+
   return (
     <div className="w-screen md:h-screen flex flex-col items-center mb-12">
       <img
@@ -11,12 +14,11 @@ export const Intro = () => {
 
       <div className="mt-24 md:mt-40 flex flex-col items-center">
         <div className="flex flex-col items-center z-20 text-center ">
-          <span className="text-3xl md:text-5xl heading-primary--main text-white font-bold font-">
-            THE PREFERRED PAYMENT <br /> PROCESSING COMPANY
-          </span>
-          <span className="text-xs md:text-2xl heading-primary--sub text-gray-200">
-            We have the solution for every businesses
-          </span>
+          <div
+            className="text-3xl md:text-5xl heading-primary--main text-white font-bold font-"
+            dangerouslySetInnerHTML={{ __html: t('introSlogan') }}
+          ></div>
+          <span className="text-xs md:text-2xl heading-primary--sub text-gray-200">{t('slogan')}</span>
         </div>
         <a
           href="#contact"

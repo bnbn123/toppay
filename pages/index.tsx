@@ -7,6 +7,7 @@ import { Providers } from 'components/Providers';
 import { Services } from 'components/Services';
 import type { NextPage } from 'next';
 import React from 'react';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const Home: NextPage = () => {
   return (
@@ -31,5 +32,13 @@ const Home: NextPage = () => {
     </div>
   );
 };
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common'])),
+    },
+  };
+}
 
 export default Home;
