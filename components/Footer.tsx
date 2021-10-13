@@ -6,6 +6,8 @@ import { Divider } from 'antd';
 import { Select } from 'antd';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
+import Link from 'next/link';
+import { getStaticProps } from 'pages';
 
 const { Option } = Select;
 export const Footer = (props: any) => {
@@ -25,11 +27,12 @@ export const Footer = (props: any) => {
     );
   });
   const router = useRouter();
+  const { locale } = router;
+  console.log('🚀 ~ file: Footer.tsx ~ line 31 ~ Footer ~ locale', locale);
 
   function onLangChange(value: string) {
     setLang(value);
     console.log(value);
-    router.replace(`/${value}`);
   }
   return (
     <footer className="w-screen footer section">
@@ -60,9 +63,17 @@ export const Footer = (props: any) => {
             <div className="intl">
               &copy;2021 company
               <>
-                <Select value={lang} style={{ width: 120 }} onChange={onLangChange}>
-                  <Option value="en">English</Option>
-                  <Option value="vi">Vietnamse</Option>
+                <Select value={lang} style={{ width: 120, marginLeft: '10px' }} onChange={onLangChange}>
+                  <Option value="en">
+                    <Link href="/" locale="en">
+                      English
+                    </Link>
+                  </Option>
+                  <Option value="vi">
+                    <Link href="/" locale="vi">
+                      Tiếng Việt
+                    </Link>
+                  </Option>
                 </Select>
               </>
             </div>

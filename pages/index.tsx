@@ -32,8 +32,11 @@ const Home: NextPage = () => {
     </div>
   );
 };
+interface LocaleProps {
+  locale: string;
+}
 
-export async function getStaticProps({ locale }) {
+export async function getStaticProps({ locale }: LocaleProps) {
   return {
     props: {
       ...(await serverSideTranslations(locale, ['common'])),

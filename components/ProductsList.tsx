@@ -11,7 +11,9 @@ export const ProductList = (props: any) => {
   const { t } = useTranslation('common');
 
   const navItems = staticData.PRODUCTS;
-  const productsItem = navItems.map((item, index) => {
+  const productsItems = navItems.map((item, index) => {
+    console.log(t(item.prodName));
+
     return (
       <section className="relative flex flex-col items-center py-10 pb-20" id="">
         <img className="absolute top-0" src="assets/img/bg-services.png"></img>
@@ -31,7 +33,7 @@ export const ProductList = (props: any) => {
 
   return (
     <section className="product section" id="product">
-      <div className="product__container">{productsItem}</div>
+      <div className="product__container">{productsItems}</div>
     </section>
   );
 };
