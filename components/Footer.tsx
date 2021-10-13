@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import staticData from 'static/assets/data.json';
 import Image from 'next/image';
 import siteLogo from 'public/assets/img/toppay-logo-white.png';
 import { Divider } from 'antd';
+import { Select } from 'antd';
+import { useRouter } from 'next/router';
+import { useTranslation } from 'next-i18next';
 
+const { Option } = Select;
 export const Footer = (props: any) => {
+  const { t } = useTranslation('common');
   const navItems: string[] = staticData.NAV_BAR_ITEMS;
-
+  const [lang, setLang] = useState<string>('en');
   const menuItem = navItems.map((item, index) => {
     const key = index + 1;
     const href = `#${item.toLowerCase().replace(' ', '_')}`;
@@ -14,12 +19,18 @@ export const Footer = (props: any) => {
     return (
       <li key={key} className="px-2 nav__item">
         <a href={href} className="nav__link">
-          {item}
+          {t(item)}
         </a>
       </li>
     );
   });
+  const router = useRouter();
 
+  function onLangChange(value: string) {
+    setLang(value);
+    console.log(value);
+    router.replace(`/${value}`);
+  }
   return (
     <footer className="w-screen footer section">
       <div className="footer__container">
@@ -46,7 +57,15 @@ export const Footer = (props: any) => {
         <hr className="bd-grid" style={{ color: 'white' }} />
         <div className="nav bd-grid">
           <div className="left-footer-text">
-            <div className="intl">&copy;2021 company</div>
+            <div className="intl">
+              &copy;2021 company
+              <>
+                <Select value={lang} style={{ width: 120 }} onChange={onLangChange}>
+                  <Option value="en">English</Option>
+                  <Option value="vi">Vietnamse</Option>
+                </Select>
+              </>
+            </div>
           </div>
           <div className="right-footer-text">Terms of service</div>
         </div>

@@ -2,18 +2,16 @@ import React from 'react';
 import Image from 'next/image';
 import styles from 'styles/Services.module.css';
 import { Card } from 'antd';
+import { useTranslation } from 'next-i18next';
 
 export const Providers = (props: any) => {
+  const { t } = useTranslation('common');
   return (
     <section className="providers section" id="providers">
       <div className="providers__container">
         <div className="providers__text bd-grid">
-          <h1 className="section-title text-center  ">PROVIDERS</h1>
-          <span className="text-3xl tx-center mb-6">
-            We work with thousands of the world’s
-            <br />
-            leading brands
-          </span>
+          <h1 className="section-title text-center  ">{t('providers_title')}</h1>
+          <span className="text-3xl" dangerouslySetInnerHTML={{ __html: t('providers_description_1') }}></span>
         </div>
         <div className="providers__container bd-grid grid">
           <div className="providers__content">
@@ -24,11 +22,7 @@ export const Providers = (props: any) => {
           </div>
         </div>
         <div className="providers__text bd-grid">
-          <p className="">
-            Checkmate... Yes, Yes, without the oops! Hey, you know how I'm, like, always trying to save the planet?
-            Here's my chance. Jaguar shark! So tell me - does it really exist? God creates dinosaurs. God destroys
-            dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs.
-          </p>
+          <p className="">{t('providers_description_2')}</p>
         </div>
       </div>
     </section>

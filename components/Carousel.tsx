@@ -2,6 +2,8 @@ import React, { CSSProperties } from 'react';
 import { LeftOutlined, RightOutlined } from '@ant-design/icons';
 import moment from 'moment';
 import { Carousel } from 'antd';
+import { useTranslation } from 'next-i18next';
+import { useWindowSize } from 'hooks/useWindowSize';
 
 interface IArrowProps {
   type?: string;
@@ -54,27 +56,32 @@ const contentStyle: CSSProperties = {
 };
 
 export const Promotions = () => {
+  const { t } = useTranslation('common');
+  const { isMobile } = useWindowSize();
+
   return (
     <section className="promotions section flex flex-col items-center" id="promotions">
       <div className="promotions__container w-3/4 ">
         <div className="promotions__text">
-          <h1 className="section-title text-center text-white ">PROMOTIONS</h1>
-          <span className="text-3xl text-white">Lorem IPsum sdasndasdas</span>
-          <p className="mt-3 px-3">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed <br />
-            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+          <h1 className="section-title text-center text-white ">{t('promotions_title')}</h1>
+          <span className="text-3xl text-white">{t('promotions_description_1')}</span>
+          <p className="mt-3 px-3">{t('promotions_description_2')} </p>
         </div>
         <div className="promotions__carousel">
           <Carousel style={contentStyle} arrows prevArrow={<SamplePrevArrow />} nextArrow={<SampleNextArrow />}>
-            <div className="h-full">
-              <img src="/assets/img/banner.svg" alt="" />
+            <div className="h-full text-center">
+              {isMobile ? (
+                <img className="w-full" src="/assets/img/mb_promotions_1.png" alt="" />
+              ) : (
+                <img className="w-full" src="/assets/img/promotions_1.png" alt="" />
+              )}
             </div>
             <div>
-              <img src="/assets/img/banner.svg" alt="" />
-            </div>
-            <div>
-              <img src="/assets/img/banner.svg" alt="" />
+              {isMobile ? (
+                <img className="w-full" src="/assets/img/mb_promotions_2.png" alt="" />
+              ) : (
+                <img className="w-full" src="/assets/img/promotions_2.png" alt="" />
+              )}
             </div>
           </Carousel>
         </div>

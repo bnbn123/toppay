@@ -7,12 +7,15 @@ import { Form, Modal } from 'antd';
 import { ContactFormValueProp } from 'types/form';
 import ContactForm from './ContactForm';
 import Link from 'next/link';
+import { useTranslation } from 'next-i18next';
+
 export const HeaderCustom = (props: any) => {
+  const { t } = useTranslation('common');
+
   const navItems: string[] = staticData.NAV_BAR_ITEMS;
   const [visible, setVisible] = React.useState(false);
   const [confirmLoading, setConfirmLoading] = React.useState(false);
   const [modalText, setModalText] = React.useState('Content of the modal');
-
   const menuItem = navItems.map((item, index) => {
     const key = index + 1;
     let href = item.toLowerCase() === 'product' ? '/product' : `#${item.toLowerCase().replace(' ', '_')}`;
@@ -32,7 +35,7 @@ export const HeaderCustom = (props: any) => {
     return (
       <li key={key} className="px-2 nav__item">
         <Link href={href}>
-          <a className="nav__link text-white font-DMSANS text-bold text-lg">{item}</a>
+          <a className="nav__link text-white font-DMSANS text-bold text-lg">{t(item)}</a>
         </Link>
       </li>
     );
@@ -72,7 +75,7 @@ export const HeaderCustom = (props: any) => {
           </div>
           <div className="nav__menu" id="nav-menu">
             <a href="#contact" className="btn btn--white btn--animated text-center md:py-4 md:px-12">
-              Get Started
+              {t('button_text')}
             </a>
           </div>
           <div className="nav__toggle" id="nav-toggle">

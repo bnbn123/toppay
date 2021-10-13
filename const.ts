@@ -1,32 +1,32 @@
 export const SERVICE_DATA = [
   {
     icon: '1.png',
-    name: 'POS Provider',
-    desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s',
+    name: 'posProvider-title',
+    desc: 'posProvider-description',
   },
   {
     icon: '2.png',
-    name: 'Website Design',
-    desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s',
+    name: 'webDesign-titl',
+    desc: 'webDesign-description',
   },
   {
     icon: '3.png',
-    name: 'Brand Design',
-    desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s',
+    name: 'brandDesign-title',
+    desc: 'brandDesign-description',
   },
   {
     icon: '4.png',
-    name: 'Marketing Support',
-    desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s',
+    name: 'marketingSupport-title',
+    desc: 'marketingSupport-description',
   },
   {
     icon: '5.png',
-    name: '24/7 Hotline',
-    desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s',
+    name: '247hotline-title',
+    desc: '247hotline-description',
   },
   {
     icon: '6.png',
-    name: 'Shop  Design',
-    desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s',
+    name: 'shopDesign-title',
+    desc: 'shopDesign-description',
   },
 ];

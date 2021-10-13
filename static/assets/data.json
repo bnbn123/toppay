@@ -2,9 +2,9 @@
   "--------------------------------------PRODUCTS------------------------------": "PRODUCTS",
   "PRODUCTS": [
     {
-      "prodName": "CLOVER MINI",
-      "prodSum": "We know the best solution for all of your business ideas and we can help you solve all business problems",
-      "prodDescription": "  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nost sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostsit amet, consectetur sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua. Ut enim ad minim veniam, quis nost",
+      "prodName": "cloverMini",
+      "prodSum": "cloverSum",
+      "prodDescription": "cloverDesc",
       "imgSrc": "/assets/img/products/clover-mini.png",
       "right": true
     },
