@@ -9,28 +9,28 @@
       "right": true
     },
     {
-      "prodName": "PAX A920",
-      "prodSum": "We know the best solution for all of your business ideas and we can help you solve all business problems",
-      "prodDescription": "  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nost sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostsit amet, consectetur sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua. Ut enim ad minim veniam, quis nost",
+      "prodName": "paxA920",
+      "prodSum": "paxA920Sum",
+      "prodDescription": "paxA920Desc",
       "imgSrc": "/assets/img/products/A920.jpg"
     },
     {
-      "prodName": "CLOVER PRO STATION",
-      "prodSum": "We know the best solution for all of your business ideas and we can help you solve all business problems",
-      "prodDescription": "  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nost sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostsit amet, consectetur sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua. Ut enim ad minim veniam, quis nost",
+      "prodName": "cloverProMini",
+      "prodSum": "cloverProSum",
+      "prodDescription": "cloverProDesc",
       "imgSrc": "/assets/img/products/clover-pro.png",
       "right": true
     },
     {
-      "prodName": "CLOVER FLEX",
-      "prodSum": "We know the best solution for all of your business ideas and we can help you solve all business problems",
-      "prodDescription": "  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nost sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostsit amet, consectetur sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua. Ut enim ad minim veniam, quis nost",
+      "prodName": "cloverFlex",
+      "prodSum": "cloverFlexSum",
+      "prodDescription": "cloverFlexDesc",
       "imgSrc": "/assets/img/products/clover-flex.png"
     },
     {
-      "prodName": "PAX E800",
-      "prodSum": "We know the best solution for all of your business ideas and we can help you solve all business problems",
-      "prodDescription": "  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nost sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostsit amet, consectetur sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua. Ut enim ad minim veniam, quis nost",
+      "prodName": "paxE800",
+      "prodSum": "paxE800Sum",
+      "prodDescription": "paxE800Desc",
       "imgSrc": "/assets/img/products/Pax-E800.png",
       "right": true
     }
