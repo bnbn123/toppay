@@ -4,14 +4,27 @@ import { Form, Input } from 'antd';
 import ContactForm from './ContactForm';
 import { ContactFormValueProp } from 'types/form';
 import { useTranslation } from 'next-i18next';
-
+import axios from 'axios';
 const { TextArea } = Input;
 
 export const Contact = (props: any) => {
   const { t } = useTranslation('common');
   const [form] = Form.useForm<ContactFormValueProp>();
-  function onSubmit(params: ContactFormValueProp) {
-    console.log('SUbmited');
+  const onSubmit = (params: ContactFormValueProp) => {
+    axios.post(
+      "https://firestore.googleapis.com/v1/projects/toppayment-bo/databases/(default)/documents/leads",
+      {
+        fields: {
+          name: { stringValue: params.name },
+          tel: { stringValue: params.tel },
+          mail: { stringValue: params.mail },
+          message: { stringValue: params.message },
+          createdAt: { timestampValue: new Date() },
+          updatedAt: { timestampValue: new Date() },
+        }
+      }
+    ).then(res => { console.log(res) })
+    console.log('Submited');
   }
   return (
     <section className="contact flex justify-center" id="contact">

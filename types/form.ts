@@ -9,5 +9,5 @@ export interface ContactFormValueProp {
   name?: string;
   tel?: number;
   mail?: string;
-  text?: string;
+  message?: string;
 }
