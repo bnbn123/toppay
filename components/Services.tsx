@@ -24,7 +24,7 @@ export const Services = (props: any) => {
                   <img src={`assets/img/icon/${item.icon}`} className="service__icon mr-2 md:mr-0" />
                   <div>
                     <div className="mt-2 md:mt-5 font-bold text-lg">{t(item.name)}</div>
-                    <div className="mt-1 md:mt-3 text-xs md:text-base  text-gray-400 font-normal">{t(item.desc)}</div>
+                    <div className="mt-1 md:mt-3 text-xs md:text-sm  text-gray-400 font-normal">{t(item.desc)}</div>
                   </div>
                 </div>
               </Card>

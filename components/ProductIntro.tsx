@@ -11,9 +11,9 @@ export const ProductIntro = () => {
 
       <div className="py-32 flex flex-col items-center">
         <div className="flex flex-col items-center z-20">
-          <span className="text-xs md:text-2xl heading-primary--sub text-white">lorem ipsum</span>
+          {/* <span className="text-xs md:text-2xl heading-primary--sub text-white">lorem ipsum</span> */}
           <span className="text-2xl md:text-6xl font-bold text-white font-DMSANS">PRODUCTS </span>
-          <span className="text-xs md:text-2xl heading-primary--sub text-white">lorem ipsum</span>
+          {/* <span className="text-xs md:text-2xl heading-primary--sub text-white">lorem ipsum</span> */}
         </div>
       </div>
     </div>

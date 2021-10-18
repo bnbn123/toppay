@@ -9,6 +9,7 @@ import { ProductList } from 'components/ProductsList';
 import { Providers } from 'components/Providers';
 import { Services } from 'components/Services';
 import type { NextPage } from 'next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Head from 'next/head';
 import Image from 'next/image';
 import React from 'react';
@@ -28,5 +29,17 @@ const Product: NextPage = () => {
     </>
   );
 };
+
+interface LocaleProps {
+  locale: string;
+}
+
+export async function getStaticProps({ locale }: LocaleProps) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common'])),
+    },
+  };
+}
 
 export default Product;

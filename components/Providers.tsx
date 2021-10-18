@@ -14,10 +14,10 @@ export const Providers = (props: any) => {
           <span className="text-3xl" dangerouslySetInnerHTML={{ __html: t('providers_description_1') }}></span>
         </div>
         <div className="providers__container bd-grid grid">
-          <div className="providers__content">
+          <div className="flex items-center providers__content">
             <Image src="/assets/img/providers/1.svg" alt="" className="providers__img" width={145} height={55} />
           </div>
-          <div className="providers__content">
+          <div className="flex items-center providers__content">
             <Image src="/assets/img/providers/2.svg" alt="" className="providers__img" width={349} height={45} />
           </div>
         </div>

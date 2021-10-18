@@ -22,8 +22,8 @@ export const ProductList = (props: any) => {
             <img src={item.imgSrc} alt="product" className="object-contain" />
           </div>
           <div className="product-info md:w-1/3">
-            <h1 className="product-title text-left text-5xl mb-6">{t(item.prodName)}</h1>
-            <span className="product-title text-3xl inline-block mb-6">{t(item.prodSum)}</span>
+            <h1 className="product-title text-left text-4xl mb-5">{t(item.prodName)}</h1>
+            <span className="product-title text-xl inline-block mb-5">{t(item.prodSum)}</span>
             <p className="product-description font-normal font-DMSANS text-gray-400">{t(item.prodDescription)}</p>
           </div>
         </div>
@@ -32,7 +32,7 @@ export const ProductList = (props: any) => {
   });
 
   return (
-    <section className="product section" id="product">
+    <section className="product" id="product">
       <div className="product__container">{productsItems}</div>
     </section>
   );

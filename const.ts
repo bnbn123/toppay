@@ -6,7 +6,7 @@ export const SERVICE_DATA = [
   },
   {
     icon: '2.png',
-    name: 'webDesign-titl',
+    name: 'webDesign-title',
     desc: 'webDesign-description',
   },
   {

@@ -68,7 +68,14 @@ export const Promotions = () => {
           <p className="mt-3 px-3">{t('promotions_description_2')} </p>
         </div>
         <div className="promotions__carousel">
-          <Carousel style={contentStyle} arrows prevArrow={<SamplePrevArrow />} nextArrow={<SampleNextArrow />}>
+          <Carousel
+            autoplay
+            autoplaySpeed={3000}
+            style={contentStyle}
+            arrows
+            prevArrow={<SamplePrevArrow />}
+            nextArrow={<SampleNextArrow />}
+          >
             <div className="h-full text-center">
               {isMobile ? (
                 <img className="w-full" src="/assets/img/mb_promotions_1.png" alt="" />
